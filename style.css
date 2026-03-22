@@ -103,6 +103,7 @@ li {
     padding-top: 1%;
     padding-right: 4%;
     padding-left: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 
 }
 
@@ -116,6 +117,7 @@ li {
     padding-top: 1%;
     padding-right: 4%;
     padding-left: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 
 }
 
@@ -181,6 +183,7 @@ li {
     padding: 1%;
     padding-left: 2%;
     padding-right: 1.5%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 }
 
 #wstep a:visited{
@@ -199,6 +202,7 @@ li {
     font-size: large;
     width: 1200px;
     overflow-y: hidden;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 }
 
 #form a:link
@@ -224,6 +228,7 @@ li {
     background-color: #235a35b6;
     border-radius: 20px;
     font-size: medium;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 }
 
 #pid img {
@@ -239,6 +244,7 @@ li {
     margin-top: 5%;
     background-color: #0f42209c;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 }
 
 #aktywnosci img {
@@ -320,19 +326,15 @@ li {
     margin-right: 30px;
 }
 
-
-
-
-
-
-#resources{
+#resources, #summary{
     margin-right: 20%;
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 1%;
     background-color: #0f42209c;
     border-radius: 20px;
     padding: 5px;
     font-size: larger;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
 }
 
 
@@ -341,6 +343,13 @@ li {
     font-size: large;
 }
 
+
+#summary span{
+    font-size: larger;
+    font-style: italic;
+    color: #92efa3;
+    font-weight: bolder;
+}
 
 
 footer {
