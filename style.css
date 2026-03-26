@@ -1,0 +1,377 @@
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body {
+    background-image: url(images/green\ abstract.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    margin-top: 7px;
+    display: inline-flex;
+    border: solid 4px #1a8832;
+    width: 100%;
+}
+
+header span {
+    text-align: left;
+    margin-left: 200px;
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+header nav {
+    display: inline-flex;
+    text-align: right;
+    margin-left: 900px;
+}
+
+header a {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+header a:link, #wstep a:link {
+    color: #062b0b;
+}
+
+header nav a:visited {
+    color: #20744a;
+}
+
+header nav a:hover {
+    color: #6ae280;
+    background-color: #051f0a5e;
+    transform: scale(1.03);
+    transition-duration: 1s;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.everything {
+    display: flexbox;
+
+}
+
+h1 {
+    text-align: center;
+    color: #28703a;
+    font-size: 40px;
+    font-family: Oswald;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.everything p,
+ul,
+ol,
+li {
+    color: white;
+    padding-left: 15px;
+}
+
+.naglowki {
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: #71f091;
+}
+
+#introduction {
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-right: 4%;
+    padding-left: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+
+}
+
+#analysis {
+    margin-top: 2%;
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-right: 4%;
+    padding-left: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+
+}
+
+#analysis a:link{
+    color: #83e790;
+}
+
+#analysis a:visited{
+    color: #6ae280;
+}
+
+.quest{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+#introduction p{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+/* layout for the three-image gallery: two images side-by-side, third centered below */
+.images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* top images: two per row */
+.images-gallery img.a,
+.images-gallery img.b {
+    flex: 0 0 calc(40% - 10px);
+    /* two columns with gap accounted for */
+    display: block;
+}
+
+/* bottom image: full-width and centered */
+.images-gallery img.c {
+    margin-left: 400px;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 700px) {
+
+    .images-gallery img.a,
+    .images-gallery img.b,
+    .images-gallery img.c {
+        flex: 0 0 100%;
+    }
+}
+
+#wstep {
+    background-color: #0f42209c;
+    border-radius: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#wstep a:visited{
+    color: #6ae280;
+}
+
+#form{
+     background-color: #0f42209c;
+    border-radius: 20px;
+    margin-right: 20%;
+    margin-left: 17%;
+    margin-top: 3%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 1.5%;
+    font-size: large;
+    width: 1200px;
+    overflow-y: hidden;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#form a:link
+#resources a:link{
+    color: #08340e;
+}
+
+#form a:visited,
+#resources a:visited{
+    color: #6ae280;
+}
+
+#form img{
+    margin-left: 5px;
+    border-radius: 30px;
+}
+
+#pid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin-top: 35px;
+    background-color: #235a35b6;
+    border-radius: 20px;
+    font-size: medium;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#pid img {
+    display: block;
+    margin-left: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+#aktywnosci {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#aktywnosci img {
+    padding-left: 7%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#activities {
+    display: inline-flex;
+    margin-left: 75px;
+    margin-top: -2%;
+}
+
+
+#dosobisty,
+#ankieta,
+#analiza,
+#wolontariat{
+    text-align: center;
+    margin-top: 125px
+}
+
+#dosobisty a:visited,
+#wolontariat a:visited,
+#ankieta a:visited,
+#analiza a:visited {
+    color: black;
+    text-decoration: dotted;
+}
+
+#dosobisty a,
+#wolontariat a,
+#ankieta a,
+#analiza a,
+#resources a{
+    font-weight: bolder;
+}
+
+
+#dosobisty::after,
+#ankieta::after,
+#analiza::after,
+#wolontariat::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    /* use the animated custom property as the start angle */
+    background: conic-gradient(from var(--angle), #a2fab1, #79db7e, #499c5b, #328647);
+    z-index: -1;
+
+}
+
+/* trigger the animation when hovering the element (not the pseudo) */
+#dosobisty:hover::after,
+#ankieta:hover::after,
+#analiza:hover::after,
+#wolontariat:hover::after {
+    animation: glowing-border 1.5s linear infinite;
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+
+#dosobisty:hover,
+#ankieta:hover,
+#analiza:hover,
+#wolontariat:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+
+#dosobisty,
+#wolontariat,
+#ankieta,
+#analiza {
+    position: relative;
+    display: flex;
+    margin-right: 30px;
+}
+
+#resources, #summary{
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 1%;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: larger;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+
+#resources a:link{
+    color: #062b0b;
+    font-size: large;
+}
+
+
+#summary span{
+    font-size: larger;
+    font-style: italic;
+    color: #92efa3;
+    font-weight: bolder;
+}
+
+
+footer {
+    align-content: center;
+    vertical-align: bottom;
+    text-align: center;
+    margin-top: 4%;
+}
+
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes glowing-border {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
