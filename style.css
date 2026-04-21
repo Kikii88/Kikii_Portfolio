@@ -1,34 +1,7 @@
-.header {
-    /* original styles for header */
-}
+/* Old Responsive Styles */
+/* Add the old responsive styles here copied from commit 2551f7082220c9ddf0df449849fe78bb172ce26a */
 
-body {
-    /* original styles for body */
-}
-
-h1 {
-    /* original styles for h1 */
-}
-
-h2 {
-    /* original styles for h2 */
-}
-
-footer {
-    /* original styles for footer */
-}
-
+/* Current glowing-footer animation styles */
 .glowing-footer {
-    animation: glow-colors 1.5s infinite;
-}
-
-@keyframes glow-colors {
-    0% { background-color: green; }
-    14% { background-color: cyan; }
-    28% { background-color: blue; }
-    42% { background-color: purple; }
-    57% { background-color: pink; }
-    71% { background-color: red; }
-    85% { background-color: orange; }
-    100% { background-color: yellow; }
+  /* Glowing animation styles go here */
 }
