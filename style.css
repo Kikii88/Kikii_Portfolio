@@ -1,64 +1,446 @@
 .oswald {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
+    background-image: url(images/green\ abstract.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    margin-top: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 4px #1a8832;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header span {
+    text-align: left;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
+    flex: 1;
+    min-width: 200px;
 }
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-end;
+    flex: 1;
+    min-width: 200px;
+}
+
+header a {
+    font-size: clamp(1rem, 3vw, 1.75rem);
+    margin-right: 0;
+}
+
+header a:link, #wstep a:link {
+    color: #062b0b;
+}
+
+header nav a:visited {
+    color: #20744a;
+}
+
+header nav a:hover {
+    color: #6ae280;
+    background-color: #051f0a5e;
+    transform: scale(1.03);
+    transition-duration: 1s;
+    border-radius: 20px 20px 20px 20px;
+}
+
+everything {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #28703a;
+    font-size: clamp(1.5rem, 8vw, 40px);
+    font-family: Oswald;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-size: clamp(1.25rem, 5vw, 25px);
+    font-style: italic;
+}
+.everything p,
+ul,
+ol,
+li {
+    color: white;
+    padding-left: 15px;
+}
+
+.naglowki {
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: #71f091;
+}
+
+#introduction {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#analysis {
+    margin-top: 2%;
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+    margin-top: 20px;
+}
+
+#analysis a:link {
+    color: #83e790;
+}
+
+#analysis a:visited {
+    color: #6ae280;
+}
+
+.quest {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#introduction p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+/* layout for the three-image gallery: two images side-by-side, third centered below */
+.images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+/* top images: two per row */
+.images-gallery img.a,
+.images-gallery img.b {
+    flex: 0 0 calc(50% - 10px);
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* bottom image: full-width and centered */
+.images-gallery img.c {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 768px) {
+    .images-gallery img.a,
+    .images-gallery img.b,
+    .images-gallery img.c {
+        flex: 0 0 100%;
+    }
+}
+
+#wstep {
+    background-color: #0f42209c;
+    border-radius: 20px;
+    margin: 5% auto 0;
+    width: 90%;
+    max-width: 800px;
+    padding: 2%;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#wstep a:visited {
+    color: #6ae280;
+}
+
+#form {
+    background-color: #0f42209c;
+    border-radius: 20px;
+    margin: 3% auto 0;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2%;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    overflow-x: auto;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#form a:link,
+#resources a:link {
+    color: #08340e;
+}
+
+#form a:visited,
+#resources a:visited {
+    color: #6ae280;
+}
+
+#form img {
+    margin-left: 5px;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+#pid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 35px;
+    margin: 35px auto 0;
+    width: 90%;
+    max-width: 900px;
+    background-color: #235a35b6;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 20px;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+@media (min-width: 769px) {
+    #pid {
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+#pid img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#aktywnosci {
+    margin: 5% auto 0;
+    width: 90%;
+    max-width: 900px;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+    padding: 20px;
+}
+
+#aktywnosci img {
+    padding: 1% 0;
+    max-width: 100%;
+    height: auto;
+}
+
+#activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
 }
 
-header nav a {
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
+#dosobisty,
+#ankieta,
+#analiza,
+#wolontariat {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
 }
 
-#introduction, #analysis, #form, #pid, #aktywnosci, #wstep, #resources, #summary {
-    padding: 20px;
-    margin: 10px 0;
+#dosobisty a:visited,
+#wolontariat a:visited,
+#ankieta a:visited,
+#analiza a:visited {
+    color: black;
+    text-decoration: dotted;
 }
 
-.activity-card {
-    border: 2px solid transparent;
-    padding: 10px;
-    transition: border-color 0.3s;
+#dosobisty a,
+#wolontariat a,
+#ankieta a,
+#analiza a,
+#resources a {
+    font-weight: bolder;
 }
 
-.activity-card:hover {
-    border-color: #ffcc00;
+#dosobisty::after,
+#ankieta::after,
+#analiza::after,
+#wolontariat::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background: conic-gradient(from var(--angle), #a2fab1, #79db7e, #499c5b, #328647);
+    z-index: -1;
 }
 
-.image-gallery {
+/* trigger the animation when hovering the element (not the pseudo) */
+#dosobisty:hover::after,
+#ankieta:hover::after,
+#analiza:hover::after,
+#wolontariat:hover::after {
+    animation: glowing-border 1.5s linear infinite;
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+
+#dosobisty:hover,
+#ankieta:hover,
+#analiza:hover,
+#wolontariat:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+
+#dosobisty,
+#wolontariat,
+#ankieta,
+#analiza {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.image-gallery img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
+#resources,
+#summary {
+    margin: 1% auto 0;
+    width: 90%;
+    max-width: 800px;
+    background-color: #0f42209c;
+    border-radius: 20px;
+    padding: 2%;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    box-shadow: 0 4px 8px 10px rgba(43, 183, 73, 0.652), 0 4px 8px 20px rgba(25, 146, 51, 0.48), 0 6px 20px 20px rgba(55, 68, 59, 0.19);
+}
+
+#resources a:link {
+    color: #062b0b;
+    font-size: large;
+}
+
+#summary span {
+    font-size: larger;
+    font-style: italic;
+    color: #92efa3;
+    font-weight: bolder;
 }
 
 footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    animation: glowing 1.5s infinite;
+    margin-top: 4%;
+    padding: 20px 10px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes glowing-border {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header span {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #introduction,
+    #analysis,
+    #wstep,
+    #resources,
+    #summary {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    #form {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    #pid,
+    #aktywnosci {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    #activities {
+        flex-direction: column;
+    }
+
+    #dosobisty,
+    #ankieta,
+    #analiza,
+    #wolontariat {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
 }
 
 @keyframes glowing {
