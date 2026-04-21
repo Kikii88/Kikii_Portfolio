@@ -1,7 +1,77 @@
-/* Old Responsive Styles */
-/* Add the old responsive styles here copied from commit 2551f7082220c9ddf0df449849fe78bb172ce26a */
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
 
-/* Current glowing-footer animation styles */
-.glowing-footer {
-  /* Glowing animation styles go here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#introduction, #analysis, #form, #pid, #aktywnosci, #wstep, #resources, #summary {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.activity-card {
+    border: 2px solid transparent;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+.activity-card:hover {
+    border-color: #ffcc00;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+    0% { text-shadow: 0 0 5px #fff; }
+    50% { text-shadow: 0 0 20px #ffcc00; }
+    100% { text-shadow: 0 0 5px #fff; }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    .image-gallery {
+        flex-direction: column;
+    }
 }
